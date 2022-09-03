@@ -8,26 +8,30 @@
                 <li router-linkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">About</a>
                 </li>
             </ul>
-            <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{anio}} {{nombre}} </span>All Right Reserved.</p>
+            <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{anio}} {{_servicioFooter.info.titulo}} </span>All Right Reserved.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+            <a href="{{_servicioFooter.info.facebook}}" class="rk-social-btn " target="_blank">
                 <svg>
                     <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-                </svg></a><a href="#0" class="rk-social-btn ">
+                </svg>
+            </a>
+            <a href="{{_servicioFooter.info.twitter}}" class="rk-social-btn " target="_blank">
                 <svg>
                     <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-                </svg></a><a href="#0" class="rk-social-btn ">
+                </svg>
+            </a>
+            <a href="{{_servicioFooter.info.instagram}}" class="rk-social-btn " target="_blank">
                 <svg>
                     <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-                </svg></a><a href="#0" class="rk-social-btn ">
-                <svg>
-                    <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
-                </svg></a></div>
+                </svg>
+            </a>
+        </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
             <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span
-                    class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">{{email}}</a></span></p>
-            <p class="rk-footer__text rk-footer__by">Theme by <a href="#"
-                    class="ae-u-bolder">{{brand}}</a></p>
+                    class="ae-u-bolder"> <a href="mailTo:{{_servicioFooter.info.email}}" class="rk-dark-color ">{{_servicioFooter.info.email}}</a></span></p>
+            <p class="rk-footer__text rk-footer__by">Theme by <a href="{{_servicioFooter.info.pagina_autor}}"
+                    class="ae-u-bolder" target="_blank">{{_servicioFooter.info.Nombre_corto}}</a></p>
         </div>
     </div>
 </footer>
