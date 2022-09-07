@@ -9,6 +9,7 @@ export class ProductosService {
 
   cargando = true;
   productos: any[] = [];
+  filtro: productoI[] = [];
 
   constructor(private http: HttpClient) { 
 
